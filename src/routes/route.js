@@ -14,10 +14,18 @@ router.get("/getUsersData", UserController.getUsersData)
 
 router.post("/createBook", BookController.createBook  )
 
-router.get("/getBooksData", BookController.getBooksData)
+router.post("/creatAuthor", BookController.createAuthor )
 
-router.post("/updateBooks", BookController.updateBooks)
-router.post("/deleteBooks", BookController.deleteBooks)
+router.get("/getBooksData" , BookController.getBooksData)
+
+router.get("/findAuthor" , BookController.findAuthor)
+
+router.get("/findBooks" , BookController.findBooks)
+
+// router.get("/getBooksData", BookController.getBooksData)
+
+// router.post("/updateBooks", BookController.updateBooks)
+// router.post("/deleteBooks", BookController.deleteBooks)
 
 //MOMENT JS
 const moment = require('moment');
